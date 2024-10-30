@@ -1,18 +1,3 @@
-<!--<odoo>-->
-<!--    <data>-->
-<!--        <report-->
-<!--            id="action_sales_report"-->
-<!--            model="account.move"-->
-<!--            string="Sales Report(Tessract)"-->
-<!--            report_type="qweb-pdf"-->
-<!--            name="tessract.report_sales_document"-->
-<!--            file="tessract.report_sales_document"-->
-<!--            print_report_name="'Sales Report - %s' % (object.name)"-->
-<!--        />-->
-<!--    </data>-->
-<!--</odoo>-->
-
-
 <odoo>
     <data>
         <record id="action_sales_report" model="ir.actions.report">

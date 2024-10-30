@@ -30,6 +30,7 @@
         'report/report_sales_action.xml',
         'report/report_sales_document.xml',
         'views/res_partner_views.xml',
+        'data/sequence_data.xml',
     ],
     'installable': True,
     'application': False,

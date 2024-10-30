@@ -86,13 +86,15 @@
                             </tr>
                         </tfoot>
                     </table>
+                    <br/>
                     <table style="width: 100%; margin-top: 40px; text-align: left;">
                         <tr>
                             <td>
-                                <p>Make all checks payable to <b>Tesseract TechnoLabs Pvt Ltd</b>.</p>
-                                <p>If you have any questions concerning this invoice,<br/><b>Contact: Shrey Panchal</b> at <b>+91 9157652641</b> or <b>accounts@tesseracttechnolabs.com</b></p>
-                                <p><b>THANK YOU FOR YOUR BUSINESS!</b></p>
-                                <a href="https://tesseracttechnolabs.com/">https://tesseracttechnolabs.com/</a>
+                                <p>Make all checks payable to <b>Tesseract TechnoLabs Pvt Ltd</b>.<br/>
+                                If you have any questions concerning this invoice,<br/>Contact: <b>Shrey Panchal</b> at <b>+91 9157652641</b> or <b>accounts@tesseracttechnolabs.com</b></p>
+                                <br/><br/><br/>
+
+                                <center><p><b>THANK YOU FOR YOUR BUSINESS!</b></p></center>
                             </td>
                         </tr>
                     </table>
