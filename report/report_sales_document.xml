@@ -1,9 +1,9 @@
 <odoo>
     <template id="report_sales_document">
         <t t-call="web.external_layout">
-            <main class="page container" style="color: #000000;">
+            <main class="page container" style="color: #000000; background-color: #FFFFFF;">
                 <t t-foreach="docs" t-as="doc">
-                    <table style="width: 100%; color: #000000;">
+                    <table style="width: 100%; color: #000000; background-color: #FFFFFF;">
                         <tr>
                             <td style="width: 60%; vertical-align: top;">
                                 <img src="/tessract/static/src/img/logo.png" style="max-height: 50px;" alt="Company Logo"/>
@@ -15,7 +15,7 @@
                             </td>
                         </tr>
                     </table>
-                    <table style="width: 100%; margin-top: 20px; color: #000000;">
+                    <table style="width: 100%; margin-top: 20px; color: #000000; background-color: #FFFFFF;">
                         <tr>
                             <td style="width: 60%; vertical-align: top;">
                                 <strong style="font-size: 25px; color: #000000;">Tesseract TechnoLabs Pvt Ltd</strong><br/>
@@ -35,11 +35,11 @@
                             </td>
                         </tr>
                     </table>
-                    <table style="width: 100%; margin-top: 20px; color: #000000;">
+                    <table style="width: 100%; margin-top: 20px; color: #000000; background-color: #FFFFFF;">
                         <tr>
                             <td style="width: 60%; vertical-align: top;">
                                 <strong>To:</strong>
-                               <strong><span t-field="doc.partner_id.name" style="margin-left: 11px;"/></strong>
+                               <strong><span t-field="doc.partner_id.name" style="margin-left: 20px;"/></strong>
                                 <span t-field="doc.partner_id.company_name"/><br/>
                                 <span t-field="doc.partner_id.street"/>, <span t-field="doc.partner_id.city"/><br/>
                                 <span t-field="doc.partner_id.zip"/>, <span t-field="doc.partner_id.state_id.name"/>, <span t-field="doc.partner_id.country_id.name"/><br/>
@@ -48,26 +48,26 @@
                             </td>
                         </tr>
                     </table>
-                    <table class="table table-bordered" style="width: 100%; margin-top: 20px; border-collapse:collapse; color: #000000;">
+                    <table class="table table-bordered" style="width: 100%; margin-top: 20px; border-collapse:collapse; color: #000000; background-color: #FFFFFF;">
                         <thead>
-                            <tr style="color: #000000;">
-                                <th style="width: 10%; text-align: center;">SR NO.</th>
-                                <th style="width: 60%; text-align: center;">DESCRIPTION</th>
-                                <th style="width: 15%; text-align: center;">UNIT PRICE</th>
-                                <th style="width: 15%; text-align: center;">TOTAL</th>
+                            <tr>
+                                <th style="width: 10%; text-align: center; color: #000000;">SR NO.</th>
+                                <th style="width: 60%; text-align: center; color: #000000;">DESCRIPTION</th>
+                                <th style="width: 15%; text-align: center; color: #000000;">UNIT PRICE</th>
+                                <th style="width: 15%; text-align: center; color: #000000;">TOTAL</th>
                             </tr>
                         </thead>
                         <tbody>
                             <t t-foreach="doc.invoice_line_ids" t-as="line">
                                 <tr>
-                                    <td style="text-align: center;"><t t-esc="line.sequence + 1"/></td>
-                                    <td><span t-field="line.name"/></td>
-                                    <td><span t-field="line.price_unit" t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/></td>
-                                    <td><span t-field="line.price_subtotal" t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/></td>
+                                    <td style="text-align: center; color: #000000;"><t t-esc="line.sequence + 1"/></td>
+                                    <td style="color: #000000;"><span t-field="line.name"/></td>
+                                    <td style="color: #000000;"><span t-field="line.price_unit" t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/></td>
+                                    <td style="color: #000000;"><span t-field="line.price_subtotal" t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/></td>
                                 </tr>
                             </t>
                         </tbody>
-                        <tfoot style="color: #000000;">
+                        <tfoot style="color: #000000; background-color: #FFFFFF;">
                             <tr>
                                 <td colspan="3" style="text-align:right; border-bottom-style:hidden;border-left-style:hidden"><strong>SUBTOTAL:</strong></td>
                                 <td style="text-align: center;"><span t-field="doc.amount_untaxed" t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/></td>
@@ -87,7 +87,7 @@
                         </tfoot>
                     </table>
                     <br/>
-                    <table style="width: 100%; margin-top: 40px; text-align: left; color: #000000;">
+                    <table style="width: 100%; margin-top: 40px; text-align: left; color: #000000; background-color: #FFFFFF;">
                         <tr>
                             <td>
                                 <p>Make all checks payable to <b>Tesseract TechnoLabs Pvt Ltd</b>.<br/>
@@ -103,3 +103,4 @@
         </t>
     </template>
 </odoo>
+
